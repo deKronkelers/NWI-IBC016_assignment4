@@ -37,29 +37,31 @@ B = bronce
 
 \begin{description}
 	\item[6 medals awarded]
-	GGGGGG
-	GGBBBB
-	GSSSSS
-	GSBBBB
+	GGGGGG: $C(6, 6) = 1$\\
+	GGBBBB: $C(6, 2) * C(4, 4) = 15 * 1 = 15$\\
+	GSSSSS: $C(6, 1) * C(5, 5) = 6 * 1 = 6$\\
+	GSBBBB: $C(6, 1) * C(5, 1) * C(4, 4) = 6 * 5 * 1 = 30$
 
 	\item[5 medals awarded]
-	GGGGG
-	GGBBB
-	GSSSS
-	GSBBB
+	GGGGG: $C(6, 5) = 6$\\
+	GGBBB: $C(6, 2) * C(4, 3) = 15 * 4 = 60$\\
+	GSSSS: $C(6, 1) * C(5, 4) = 6 * 5 = 30$\\
+	GSBBB: $C(6, 1) * C(5, 1) * C(4, 3) = 6 * 5 * 4 = 120$
 
 	\item[4 medals awarded]
-	GGGG
-	GGBB
-	GSSS
-	GSBB
+	GGGG: $C(6, 4) = 15$\\
+	GGBB: $C(6, 2) * C(4, 2) = 15 * 6 = 90$\\
+	GSSS: $C(6, 1) * C(5, 3) = 6 * 10 = 60$\\
+	GSBB: $C(6, 1) * C(5, 1) * C(4, 2) = 6 * 5 * 6 = 180$
 
 	\item[3 medals awarded]
-	GGG
-	GGS
-	GSS
-	GSB
+	GGG: $C(6, 3) = 20$\\
+	GGS: $C(6, 2) * C(4, 1) = 15 * 4 = 60$\\
+	GSS: $C(6, 1) * C(5, 2) = 6 * 10 = 60$\\
+	GSB: $C(6, 1) * C(5, 1) * C(4, 1) = 6 * 5 * 4 = 120$
 \end{description}
+
+There are $1 + 15 + 6 + 30 + 6 + 60 + 30 + 120 + 15 + 90 + 60 + 180 + 20 + 60 + 60 + 120 = 873$ ways to reward the medals.
 
 \section*{13}
 $\sum_{i = 0}^{200}$$(\binom{200}{i} 2x^{200 - i} * (-3)y^i)\\

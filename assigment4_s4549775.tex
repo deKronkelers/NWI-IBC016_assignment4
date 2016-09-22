@@ -37,7 +37,17 @@ The term which contains $x^{101}y^{99}$ is $\binom{200}{99} 2x^{101} * (-3)y^{99
 
 \section*{14}
 \begin{enumerate}[a]
-	\item
+	\item %a
+	$\binom{n}{r}\binom{r}{k}$ means that you choose $r$ elements from a set of $n$ elements and then choose $k$ elements from the set of $r$ elements you chose first.
+
+	$\binom{n}{k}\binom{n - k}{r - k}$ means that you choose $k$ elements out of $n$ elements and choose $r - k$ from the remaining $n - k$ elements.
+
+	It is arbitrary whether you say "I choose $k$ elements out of $n$." or "I leave $n - k$ out of $n$ elements over." so when there are the same amount of elements left over than both methods are equal.
+
+	$n - r = n - k - (r - k)\\
+	n - r = n - k - r + k\\
+	n - r = n - r$ \checkmark
+
 	\item % b
 	We want to prove: $C(n, r)C(r, k) = C(n, k)C(n - k, r - k)$
 
